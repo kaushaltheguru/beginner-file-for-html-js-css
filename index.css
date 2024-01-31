@@ -1,0 +1,18 @@
+body{
+  background-color: aqua;  
+  align-items: center;
+}
+p{
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+    border: 5px;
+    border-color: black;
+    border-radius: 3px;
+}
+button{
+    align-items: center;
+    font-weight: bolder;
+    border: 0px;
+    border-radius: 3px;
+}
