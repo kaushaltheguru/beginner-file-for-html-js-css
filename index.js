@@ -1,14 +1,14 @@
 
 let ta = document.getElementById("ta-el");
-
+console.log(ta);
 function btnclick(){
     let p1 = document.getElementById("p1-el")
     //console.log(p1)
     //p1.textContent = p1.textContent + " and looks like this button works"
-    
-    let age = integer(ta.textContent);
+    console.log(ta)
+    let age = ta.value;
     let discount = "";
-
+    //p1.textContent += "-- "+ age + " --";
     if(age<6)
     {
         discount = "free"
@@ -26,5 +26,5 @@ function btnclick(){
         discount = "senior Citizen"
     }
     p1.textContent = "You are Eligible for: " + discount;
-
+    
 }
