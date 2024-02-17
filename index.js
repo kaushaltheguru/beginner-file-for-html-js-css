@@ -1,10 +1,22 @@
-let countries = ["china","india","usa","indonesia","brazil"]
-
+let countries = ["sm1","india","usa","indonesia","sm2"]
+let p1 = document.getElementById("p1-el")
 
 function btnclick(){
-    let p1 = document.getElementById("p1-el")
+    
     console.log(p1)
-    p1.innerHTML = "The Most Populus Countries are as below<br>"
+    displayArray();
+    countries.shift();
+    countries.unshift("china")
+    countries.pop();
+    countries.push("brazil");
+    displayArray();
+
+
+}
+
+function displayArray()
+{
+    p1.innerHTML = "<br>The Most Populus Countries are as below<br>"
     for(i=0; i<countries.length; i++)
     {    
     p1.innerHTML += "<br>"+countries[i] + "<br>"

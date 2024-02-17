@@ -1,6 +1,7 @@
 body{
-  background-color: aqua;  
+  background-color: rgb(9, 114, 114);  
   align-items: center;
+  
 }
 p{
     align-self: center;
