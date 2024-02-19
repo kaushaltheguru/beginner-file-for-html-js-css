@@ -4,7 +4,7 @@ let p2 = document.getElementById("p2-el");
 
 
 function btnclick(){
-  
+  p1.innerHTML = "";
   let j = displayRandomArray(); 
   let player1 = countries[j];
   p1.innerHTML +=  "<br>PLayer One "+player1;
@@ -12,7 +12,9 @@ function btnclick(){
   let k = displayRandomArray();
   let player2 = countries[k];
   p1.innerHTML += "<br> Player Two "+player2;
-
+  
+  let isP1Rock = player1 === "Rock";
+  p2.innerHTML = "hi ia m para 2";
 
     if(player1 === "Rock")
     {p2.innerHTML="<br> p1 rock"
